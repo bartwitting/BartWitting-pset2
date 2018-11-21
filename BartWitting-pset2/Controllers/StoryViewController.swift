@@ -10,10 +10,12 @@ import UIKit
 
 class StoryViewController: UIViewController {
 
+    ///Hier wordt het verhaal ontvangen uit de vorige VC
     var theStory : Story!
     
     @IBOutlet weak var textView: UITextView!
     
+    ///Deze functie maakt het scherm en vult het tekstveld in met het verhaal
     override func viewDidLoad() {
         super.viewDidLoad()
         textView.attributedText = theStory.attributedText
