@@ -8,20 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		50219D71219D9734003B17C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50219D70219D9734003B17C7 /* AppDelegate.swift */; };
-		50219D73219D9734003B17C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50219D72219D9734003B17C7 /* ViewController.swift */; };
+		50219D73219D9734003B17C7 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50219D72219D9734003B17C7 /* IntroViewController.swift */; };
 		50219D76219D9734003B17C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50219D74219D9734003B17C7 /* Main.storyboard */; };
 		50219D78219D9735003B17C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50219D77219D9735003B17C7 /* Assets.xcassets */; };
 		50219D7B219D9735003B17C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50219D79219D9735003B17C7 /* LaunchScreen.storyboard */; };
+		50B6313C21A2CC2300CBB8EB /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B6313B21A2CC2300CBB8EB /* Story.swift */; };
+		50B6313F21A2CD8200CBB8EB /* WordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B6313E21A2CD8200CBB8EB /* WordsViewController.swift */; };
+		50B6314121A2CD8C00CBB8EB /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B6314021A2CD8C00CBB8EB /* StoryViewController.swift */; };
+		50B6315421A433E600CBB8EB /* madlib4_dance.txt in Resources */ = {isa = PBXBuildFile; fileRef = 50B6314F21A433E600CBB8EB /* madlib4_dance.txt */; };
+		50B6315521A433E600CBB8EB /* madlib2_university.txt in Resources */ = {isa = PBXBuildFile; fileRef = 50B6315021A433E600CBB8EB /* madlib2_university.txt */; };
+		50B6315621A433E600CBB8EB /* madlib0_simple.txt in Resources */ = {isa = PBXBuildFile; fileRef = 50B6315121A433E600CBB8EB /* madlib0_simple.txt */; };
+		50B6315721A433E600CBB8EB /* madlib3_clothes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 50B6315221A433E600CBB8EB /* madlib3_clothes.txt */; };
+		50B6315821A433E600CBB8EB /* madlib1_tarzan.txt in Resources */ = {isa = PBXBuildFile; fileRef = 50B6315321A433E600CBB8EB /* madlib1_tarzan.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		50219D6D219D9734003B17C7 /* BartWitting-pset2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BartWitting-pset2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50219D70219D9734003B17C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		50219D72219D9734003B17C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		50219D72219D9734003B17C7 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		50219D75219D9734003B17C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50219D77219D9735003B17C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50219D7A219D9735003B17C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50219D7C219D9735003B17C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50B6313B21A2CC2300CBB8EB /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		50B6313E21A2CD8200CBB8EB /* WordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsViewController.swift; sourceTree = "<group>"; };
+		50B6314021A2CD8C00CBB8EB /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		50B6314F21A433E600CBB8EB /* madlib4_dance.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = madlib4_dance.txt; sourceTree = "<group>"; };
+		50B6315021A433E600CBB8EB /* madlib2_university.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = madlib2_university.txt; sourceTree = "<group>"; };
+		50B6315121A433E600CBB8EB /* madlib0_simple.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = madlib0_simple.txt; sourceTree = "<group>"; };
+		50B6315221A433E600CBB8EB /* madlib3_clothes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = madlib3_clothes.txt; sourceTree = "<group>"; };
+		50B6315321A433E600CBB8EB /* madlib1_tarzan.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = madlib1_tarzan.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +70,54 @@
 		50219D6F219D9734003B17C7 /* BartWitting-pset2 */ = {
 			isa = PBXGroup;
 			children = (
-				50219D70219D9734003B17C7 /* AppDelegate.swift */,
-				50219D72219D9734003B17C7 /* ViewController.swift */,
-				50219D74219D9734003B17C7 /* Main.storyboard */,
 				50219D77219D9735003B17C7 /* Assets.xcassets */,
-				50219D79219D9735003B17C7 /* LaunchScreen.storyboard */,
 				50219D7C219D9735003B17C7 /* Info.plist */,
+				50B6314321A2CDBB00CBB8EB /* Boards */,
+				50B6313D21A2CD5200CBB8EB /* Delegates */,
+				50B6314221A2CDAB00CBB8EB /* Controllers */,
+				50B6314421A4336D00CBB8EB /* Resources */,
 			);
 			path = "BartWitting-pset2";
+			sourceTree = "<group>";
+		};
+		50B6313D21A2CD5200CBB8EB /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				50219D70219D9734003B17C7 /* AppDelegate.swift */,
+				50B6313B21A2CC2300CBB8EB /* Story.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		50B6314221A2CDAB00CBB8EB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				50219D72219D9734003B17C7 /* IntroViewController.swift */,
+				50B6313E21A2CD8200CBB8EB /* WordsViewController.swift */,
+				50B6314021A2CD8C00CBB8EB /* StoryViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		50B6314321A2CDBB00CBB8EB /* Boards */ = {
+			isa = PBXGroup;
+			children = (
+				50219D74219D9734003B17C7 /* Main.storyboard */,
+				50219D79219D9735003B17C7 /* LaunchScreen.storyboard */,
+			);
+			path = Boards;
+			sourceTree = "<group>";
+		};
+		50B6314421A4336D00CBB8EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				50B6315121A433E600CBB8EB /* madlib0_simple.txt */,
+				50B6315321A433E600CBB8EB /* madlib1_tarzan.txt */,
+				50B6315021A433E600CBB8EB /* madlib2_university.txt */,
+				50B6315221A433E600CBB8EB /* madlib3_clothes.txt */,
+				50B6314F21A433E600CBB8EB /* madlib4_dance.txt */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,8 +178,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50B6315621A433E600CBB8EB /* madlib0_simple.txt in Resources */,
+				50B6315821A433E600CBB8EB /* madlib1_tarzan.txt in Resources */,
+				50B6315721A433E600CBB8EB /* madlib3_clothes.txt in Resources */,
 				50219D7B219D9735003B17C7 /* LaunchScreen.storyboard in Resources */,
 				50219D78219D9735003B17C7 /* Assets.xcassets in Resources */,
+				50B6315421A433E600CBB8EB /* madlib4_dance.txt in Resources */,
+				50B6315521A433E600CBB8EB /* madlib2_university.txt in Resources */,
 				50219D76219D9734003B17C7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +196,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50219D73219D9734003B17C7 /* ViewController.swift in Sources */,
+				50B6314121A2CD8C00CBB8EB /* StoryViewController.swift in Sources */,
+				50219D73219D9734003B17C7 /* IntroViewController.swift in Sources */,
 				50219D71219D9734003B17C7 /* AppDelegate.swift in Sources */,
+				50B6313F21A2CD8200CBB8EB /* WordsViewController.swift in Sources */,
+				50B6313C21A2CC2300CBB8EB /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
