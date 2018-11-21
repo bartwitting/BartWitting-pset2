@@ -12,7 +12,6 @@ Daarna kom je in het scherm dat je woorden in kan gaan vullen.
 
 Je kunt zien dat in de placeholder staat wat voor woord je in moet vullen en boven het tekst veld staat hoeveel woorden je nog moet invullen.
 Je krijgt een melding als het woord is ingevuld of als het tekstvak leeg is.
-![melding1](/doc/Label1.png)
 ![Leeg](/doc/EmptyPor.png)
 
 Als je aan het einde bent veranderd de "Next" knop in "GO!"
