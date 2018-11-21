@@ -115,6 +115,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                <connections>
+                                                    <action selector="fillInButPress:" destination="muQ-9t-Uzn" eventType="primaryActionTriggered" id="5uM-Yc-3cO"/>
+                                                </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6NQ-ve-coX">
                                                 <rect key="frame" x="263" y="5" width="80" height="30"/>
@@ -140,17 +143,6 @@
                                     <constraint firstItem="lr3-Ut-Z4R" firstAttribute="leading" secondItem="z4r-w3-NTg" secondAttribute="leading" id="dSE-rQ-swJ"/>
                                 </constraints>
                             </stackView>
-                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lk4-FT-9Go">
-                                <rect key="frame" x="127.5" y="247.5" width="120" height="40"/>
-                                <color key="backgroundColor" red="0.84493972081218272" green="0.84493972081218272" blue="0.84493972081218272" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="JJg-LV-r2e"/>
-                                    <constraint firstAttribute="height" constant="40" id="fHu-jl-neT"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="nIH-O1-NKr" userLabel="Stories">
                                 <rect key="frame" x="76" y="210.5" width="223" height="246.5"/>
                                 <subviews>
@@ -213,12 +205,10 @@
                             <constraint firstItem="nIH-O1-NKr" firstAttribute="leading" secondItem="B0a-S0-B3I" secondAttribute="leadingMargin" constant="60" id="02G-kZ-bqd"/>
                             <constraint firstItem="z4r-w3-NTg" firstAttribute="top" secondItem="bzm-sj-aR2" secondAttribute="top" constant="40" id="4Pk-VJ-eue"/>
                             <constraint firstItem="z4r-w3-NTg" firstAttribute="centerX" secondItem="B0a-S0-B3I" secondAttribute="centerX" id="Gh3-sF-h8v"/>
-                            <constraint firstItem="lk4-FT-9Go" firstAttribute="top" secondItem="z4r-w3-NTg" secondAttribute="bottom" constant="30" id="NUd-BM-TOJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="z4r-w3-NTg" secondAttribute="trailing" id="QvV-Ez-71e"/>
                             <constraint firstItem="SFX-na-vka" firstAttribute="trailing" secondItem="B0a-S0-B3I" secondAttribute="trailingMargin" id="TKf-UQ-li5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nIH-O1-NKr" secondAttribute="trailing" constant="60" id="Upc-BY-EAb"/>
                             <constraint firstItem="nIH-O1-NKr" firstAttribute="centerY" secondItem="B0a-S0-B3I" secondAttribute="centerY" id="e6H-pw-ce8"/>
-                            <constraint firstItem="lk4-FT-9Go" firstAttribute="centerX" secondItem="B0a-S0-B3I" secondAttribute="centerX" id="iIU-mT-ahe"/>
                             <constraint firstItem="SFX-na-vka" firstAttribute="top" secondItem="bzm-sj-aR2" secondAttribute="top" constant="10" id="iRh-ck-l0f"/>
                             <constraint firstItem="z4r-w3-NTg" firstAttribute="leading" secondItem="B0a-S0-B3I" secondAttribute="leadingMargin" id="jff-Nr-szI"/>
                             <constraint firstItem="nIH-O1-NKr" firstAttribute="centerX" secondItem="B0a-S0-B3I" secondAttribute="centerX" id="kfO-G1-nBb"/>
@@ -234,7 +224,6 @@
                         <outlet property="storiesStack" destination="nIH-O1-NKr" id="bPe-d3-F5C"/>
                         <outlet property="tarzanBut" destination="Gwe-KD-Mvf" id="qRn-17-5SV"/>
                         <outlet property="uniBut" destination="JzD-Q3-ghJ" id="pqn-Jz-Rk7"/>
-                        <outlet property="warningLabel" destination="lk4-FT-9Go" id="gla-Lc-LlY"/>
                         <outlet property="wordCountLabel" destination="Ra4-ah-bMY" id="pQE-gD-FgW"/>
                         <outlet property="wordField" destination="4T5-oq-IXv" id="rgk-7O-48e"/>
                         <outlet property="wordsStack" destination="z4r-w3-NTg" id="PLq-8q-M10"/>

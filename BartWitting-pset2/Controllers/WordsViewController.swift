@@ -23,7 +23,6 @@ class WordsViewController: UIViewController {
     @IBOutlet weak var OKBut: UIButton!
     
     @IBOutlet weak var exitBut: UIButton!
-    @IBOutlet weak var warningLabel: UILabel!
     
     @IBAction func unwindToStories(segue: UIStoryboardSegue) {
         updateUI()
@@ -66,8 +65,9 @@ class WordsViewController: UIViewController {
             fillInWord(word:woord)
         }
         else {
-            warningLabel.isHidden = false
-            warningLabel.text = "Fill in a word"
+            let alert = UIAlertController(title: "Empty text", message: "You forgot to fill in a word", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
         }
         
     }
@@ -79,7 +79,6 @@ class WordsViewController: UIViewController {
     func updateUI() {
         storiesStack.isHidden = false
         wordsStack.isHidden = true
-        warningLabel.isHidden = true
         exitBut.isHidden = true
         OKBut.setTitle("Next", for: .normal)
     }
@@ -97,8 +96,6 @@ class WordsViewController: UIViewController {
 
     func fillInWord(word:String) {
         verhaal.fillInPlaceholder(word: word)
-        warningLabel.isHidden = false
-        warningLabel.text = "Word added to the story"
         if verhaal.remainingPlaceholders == 1 {
             OKBut.setTitle("GO!", for: .normal)
         }
