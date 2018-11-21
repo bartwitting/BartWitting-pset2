@@ -5,7 +5,7 @@ De app begint op het intro scherm waar hij het spel uitlegt.
 ![Intro](/doc/IntroPor.png)
 
 Vervolgens kom je op het scherm waar je kiest welke verhaal je wil invullen.
-![Verhaalkiezen](/doc/StorypickerPor.png)
+![Verhaalkiezen](/doc/StorypickPor.png)
 
 Daarna kom je in het scherm dat je woorden in kan gaan vullen.
 ![Invullen](/doc/FillInPor.png)
