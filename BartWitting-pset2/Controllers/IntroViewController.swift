@@ -10,7 +10,7 @@ import UIKit
 
 class IntroViewController: UIViewController {
 
-    /// functie bouwt het beginscherm
+    /// Function to build the screen
     override func viewDidLoad() {
         super.viewDidLoad()
     }

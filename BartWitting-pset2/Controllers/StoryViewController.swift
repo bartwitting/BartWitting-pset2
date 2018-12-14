@@ -10,15 +10,15 @@ import UIKit
 
 class StoryViewController: UIViewController {
 
-    ///Hier wordt het verhaal ontvangen uit de vorige VC
+    /// Defining the variables, this time the story from the last VC
     var theStory : Story!
     
+    /// Defining the outlets
     @IBOutlet weak var textView: UITextView!
     
-    ///Deze functie maakt het scherm en vult het tekstveld in met het verhaal
+    /// Building the screen by filling in the created story
     override func viewDidLoad() {
         super.viewDidLoad()
         textView.attributedText = theStory.attributedText
-        
     }
 }

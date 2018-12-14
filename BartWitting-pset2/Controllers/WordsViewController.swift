@@ -10,7 +10,7 @@ import UIKit
 
 class WordsViewController: UIViewController {
 
-    ///Alle outlets gedefinieerd
+    /// Defining all outlets
     @IBOutlet weak var storiesStack: UIStackView!
     @IBOutlet weak var simpleBut: UIButton!
     @IBOutlet weak var tarzanBut: UIButton!
@@ -25,25 +25,25 @@ class WordsViewController: UIViewController {
     
     @IBOutlet weak var exitBut: UIButton!
     
-    ///Deze functie laat de terugknop hier aankomen en activeert de updateUI functie
+    /// Action to go back to this opening screen and activate a function
     @IBAction func unwindToStories(segue: UIStoryboardSegue) {
         updateUI()
     }
     
-    ///Een enum gemaakt om te voorkomen dat ik spelfouten maak in de filenamen
+    /// An enumeration for the file names
     enum Verhaal : String {
             case simple = "madlib0_simple", tarzan = "madlib1_tarzan", uni = "madlib2_university", clothes = "madlib3_clothes", dance = "madlib4_dance"
     }
     
-    ///Functie bouwt het scherm op en activeert de updateUI funcite om het scherm goed in te delen.
+    /// Building the screen and activate a function
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
     }
-    ///Een leeg verhaal zodat deze ingevuld kan worden door de functies en later verstuurd kan worden naar de volgende VC
+    /// An empty story to fill in and send to the next VC
     var verhaal : Story = Story(withText: " ")
     
-    ///Deze functie kijkt op welke knop geklikt wordt om de juiste story te initialiseren
+    /// Action to see which story to pick and update the link
     @IBAction func storyButPress(_ sender: UIButton) {
         var link = ""
         switch sender {
@@ -63,7 +63,7 @@ class WordsViewController: UIViewController {
         pickStory(file: link)
     }
     
-    ///In deze functie wordt de input van het textfield verwerkt nadat er op de knop is geklikt
+    /// Action to get the text and send it to the next funciton
     @IBAction func fillInButPress(_ sender: Any) {
         let woord = wordField.text!
         if woord.count > 0 {
@@ -77,13 +77,13 @@ class WordsViewController: UIViewController {
         
     }
     
-    ///Deze functie laat terug gaan naar de storykeuze
+    /// Action to go back to the menu for picking stories
     @IBAction func exitBut(_ sender: Any) {
         updateUI()
         wordField.endEditing(true)
     }
     
-    ///Deze functie laat alleen de onderdelen zien die aan het begin nodig zijn
+    /// Function to build the screen correctly at the begining
     func updateUI() {
         storiesStack.isHidden = false
         wordsStack.isHidden = true
@@ -91,7 +91,7 @@ class WordsViewController: UIViewController {
         OKBut.setTitle("Next", for: .normal)
     }
     
-    ///Deze functie pakt het verhaal dat gekozen is en haalt deze op uit het bestand en zet het in de variabele verhaal
+    /// Function to retrieve the story from the file and update the labels
     func pickStory(file: String) {
         storiesStack.isHidden = true
         wordsStack.isHidden = false
@@ -103,7 +103,7 @@ class WordsViewController: UIViewController {
         wordField.placeholder = verhaal.nextPlaceholder?.lowercased()
     }
 
-    ///Deze functie zet de woorden die zijn opgegeven in het verhaal
+    /// Function to fill in the words in the story
     func fillInWord(word:String) {
         verhaal.fillInPlaceholder(word: word)
         if verhaal.remainingPlaceholders == 1 {
@@ -117,7 +117,7 @@ class WordsViewController: UIViewController {
         wordField.text = ""
     }
     
-    ///Deze functie verstuurt het verhaal naar de volgende VC
+    /// Action to send the completed story to the next VC
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowStorySegue" {
             let storyviewcontroller = segue.destination as! StoryViewController
